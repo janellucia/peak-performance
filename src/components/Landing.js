@@ -11,9 +11,9 @@ function Landing() {
         <div className="information">
           <h2>The Mental Training App Used <br></br>By World and Olympic Champions</h2>
           <ul>
-            <li >Find it difficult to instantly get ‘in the zone’?</li>
+            <li >Find it difficult to instantly get "in the zone"?</li>
             <li>Can’t sleep after or before performing?</li>
-            <li>Constantly worry about ‘what might go wrong’?</li>
+            <li>Constantly worry about "what might go wrong"?</li>
             <li>Feel anxious before a performance?</li>
           </ul>
           <p>So do the world’s top professional skaters but they know the secret to overcoming these mental challenges - Peak Performance Skating.</p>

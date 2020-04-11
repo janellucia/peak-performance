@@ -20,7 +20,7 @@ function Testimonials() {
         <div class="each-testimonial">
           <img src={yuzuru} alt="Yuzuru Hanyu profile" />
           <h3>Yuzuru Hanyu</h3>
-          <p className="title">2014 OLYMPIC & WORLD CHAMPION</p>
+          <p className="title">2014 & 2018 OLYMPIC GOLD CHAMPION</p>
           <p className="testimonial">“Peak Performance Skating helped me find balance in my life so I could focus on my goal and go for it!”</p>
         </div>
 
