@@ -1,8 +1,6 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSpotify, faFacebookF, faInstagram, faYoutube, faItunesNote } from '@fortawesome/free-brands-svg-icons'
 
 export default props => {
   return (

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll'
 
 import Landing from '../components/Landing';
 import Testimonials from "../components/Testimonials"
@@ -7,8 +8,6 @@ import Featured from "../components/Featured"
 import Getapp from "../components/Getapp"
 import Team from "../components/Team"
 import Listen from "../components/Listen"
-
-
 
 
 function Main() {

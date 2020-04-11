@@ -1,11 +1,10 @@
 import React from 'react';
 import trackOne from '../audio/peak-performance-sample.mp3'
-import trackTwo from '../audio/everybody-needs-a-name.mp3'
-import trackThree from '../audio/window-pane.mp3'
+
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBackward, faForward, faPlay, faPause } from '@fortawesome/free-solid-svg-icons'
+import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons'
 
 
 const TRACKS = [

@@ -6,7 +6,7 @@ function Landing() {
     <section className="landing">
       <div className="wrapper">
         <div className="video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/WGNPdL5YMAY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe title="Brian Orser Peak Performance Interview with Steve Anthony on CP24" width="560" height="315" src="https://www.youtube.com/embed/WGNPdL5YMAY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div className="information">
           <h2>The Mental Training App Used <br></br>By World and Olympic Champions</h2>

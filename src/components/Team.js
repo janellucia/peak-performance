@@ -13,7 +13,7 @@ function Team() {
 
         <div className="team-wrap">
           <div className="each-team-member">
-            <img src={brian} alt="CP24 logo" />
+            <img src={brian} alt="Brian Orser profile" />
             <div className="info">
               <h3>Brian Orser</h3>
               <p className="title">Olympic Medalist & Hall of Fame Coach</p>
@@ -25,7 +25,7 @@ function Team() {
           </div>
 
           <div className="each-team-member">
-            <img src={asad} alt="Asad Mecci profile image" />
+            <img src={asad} alt="Asad Mecci profile" />
             <div className="info">
               <h3>Asad Mecci</h3>
               <p className="title">Motivational Coach & Consulting Hypnotist</p>
@@ -38,7 +38,7 @@ function Team() {
           </div>
 
           <div className="each-team-member">
-            <img src={swarit} alt="Swarit Jajal profile image" />
+            <img src={swarit} alt="Swarit Jajal profile" />
             <div className="info">
               <h3>Swarit Jajal</h3>
               <p className="title">Creative Director / Partner</p>
