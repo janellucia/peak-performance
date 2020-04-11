@@ -32,7 +32,7 @@
       }
 
       h2 {
-        margin-top: 0;
+        margin: 0 0 10px;
         color: $mainColour;
         font-size: 33px;
 
@@ -42,11 +42,13 @@
           }
         }
         @media (max-width: 900px) {
+          margin: 10px 0 10px;
           br {
             display: initial;
           }
         }
         @media (max-width: 550px) {
+          font-size: 26px;
           br {
             display: none;
           }

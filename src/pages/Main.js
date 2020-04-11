@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-scroll'
 
 import Landing from '../components/Landing';
 import Testimonials from "../components/Testimonials"
