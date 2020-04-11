@@ -1,0 +1,94 @@
+.howitworks {
+  padding: 70px 0;
+
+  .wrapper {
+    text-align: center;
+
+    h2 {
+      color: $mainColour;
+      text-transform: uppercase;
+    }
+
+    .sub-title {
+      color: white;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    .benefits-wrap {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 50px 0;
+
+     @media (max-width: 900px) {
+      width: 100%;
+      margin: 0 auto;
+    }
+      
+      .each-benefit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 500px;
+        margin: 0 50px;
+
+        @media (max-width: 900px) {
+          width: 100%;
+          margin: 25px auto;
+          text-align: center;
+        }
+
+
+        img {
+          width: 150px;
+          height: auto;
+          margin-right: 50px;
+
+          @media (max-width: 768px) {
+            width: 100px;
+            margin: 0 auto;
+          }
+        }
+
+        .benefits {
+          text-align: left;
+          width: 300px;
+
+          @media (max-width: 768px) {
+            width: 90%;
+            text-align: center;
+            margin: 0 auto;
+          }
+
+          h3 {
+            font-size: 26px;
+            margin-bottom: 0;
+            text-transform: uppercase;
+          }
+
+          p {
+            margin: 5px 0;
+          }
+
+          ul {
+            list-style: disc;
+            @media (max-width: 768px) {
+              list-style: none;
+            }
+          }
+        }
+      }
+    }
+
+    .energize {
+      color: #f28e1e !important;
+    }
+
+    .relax {
+      color: #6fae39 !important;
+    }
+
+  }
+}

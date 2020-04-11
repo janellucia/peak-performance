@@ -3,7 +3,7 @@
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba($black, 0.1) !important;
+  background: rgba(black, 0.1) !important;
   top: 0;
 }
 
@@ -16,7 +16,7 @@
   width: 31px;
   height: 25px;
   right: 2.5%;
-  top: 30px;
+  top: 59px;
   display: none;
 
   @media (max-width: 768px) {
@@ -26,7 +26,7 @@
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: $black;
+  background: black;
   height: 2px !important;
 }
 
@@ -36,15 +36,17 @@
   display: inline-block;
   text-decoration: none;
   margin-bottom: 10px;
-  color: $black;
+  color: white;
   transition: all 0.2s;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 5px;
+  a {
+    color: white;
+  }
 
   &:hover, &:focus, &:active {
     background: transparent;
-    color: $sapphire;
   }
 }
 
@@ -57,20 +59,20 @@
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: $black;
+  background: white;
   width: 1.5px !important;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: $shortbread;
   padding: 2.5em 1.5em 0;
   font-size: 1rem;
+  background-image: url(../images/background.jpg);
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: $black;
+
 }
 
 /* Wrapper for item list */

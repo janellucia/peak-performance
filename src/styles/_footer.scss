@@ -1,19 +1,28 @@
 footer {
+  background: black;
+  color: white;
   padding: 20px 0;
   .wrapper {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: $mainFont;
   }
-  .social-follow {
-    display: block;
+
+  .disclaimer {
+    font-size: 0.7rem;
+    max-width: 600px;
     margin: 0 auto;
+  }
+
     a {
-      font-size: 2rem;
+      color: white;
 
       &:hover, &:focus, &:active {
-        color: $forestGreen;
+        color: $mainColour;
       }
     }
-  }
+
 
 }

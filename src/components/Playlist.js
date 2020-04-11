@@ -1,23 +1,20 @@
 import React from 'react';
-import trackOne from '../audio/if-only-the-rain.mp3'
+import trackOne from '../audio/peak-performance-sample.mp3'
 import trackTwo from '../audio/everybody-needs-a-name.mp3'
 import trackThree from '../audio/window-pane.mp3'
-// import albumCover from '../images/album-cover.png'
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBackward, faForward, faPlay, faPause } from '@fortawesome/free-solid-svg-icons'
-import { faSpotify, faFacebookF, faInstagram, faYoutube, faItunesNote } from '@fortawesome/free-brands-svg-icons'
 
 
 const TRACKS = [
-  { id: 1, title: "If Only the Rain" },
-  { id: 2, title: "Everybody Needs a Name" },
-  { id: 3, title: "Window Pane" }
+  { id: 1, title: "Peak Performance Skating" }
 ];
 
 class Playlist extends React.Component {
   state = {
-    selectedTrack: "If Only the Rain",
+    selectedTrack: "Peak Performance Skating",
     player: "playing",
     currentTime: null,
     duration: null
@@ -50,14 +47,8 @@ class Playlist extends React.Component {
       let track;
       track = trackOne;
       switch (this.state.selectedTrack) {
-        case "If Only the Rain":
+        case "Peak Performance":
           track = trackOne;
-          break;
-        case "Everybody Needs a Name":
-          track = trackTwo;
-          break;
-        case "Window Pane":
-          track = trackThree;
           break;
         default:
           break;
@@ -74,7 +65,7 @@ class Playlist extends React.Component {
       } else if (this.state.player === "stopped") {
         this.player.pause();
         this.player.currentTime = 0;
-        this.setState({ selectedTrack: "If Only the Rain" });
+        this.setState({ selectedTrack: "Peak Performance" });
       } else if (
         this.state.player === "playing" &&
         prevState.player === "paused"
@@ -134,9 +125,7 @@ class Playlist extends React.Component {
         <li
           key={item.id}
           onClick={() => this.setState({ selectedTrack: item.title })}
-          style={{
-            fontFamily: item.title === this.state.selectedTrack && 'Favorit-Bold'
-          }}
+
           tabIndex='0'
         >
           <span>{item.title}</span>
@@ -148,11 +137,9 @@ class Playlist extends React.Component {
     return (
       <div className="playlist">
         <div className="player">
+          <h3>Peak Performace <br></br>Audio Sample</h3>
           {this.state.player !== "stopped" && (
             <div className="buttons">
-              <button onClick={() => this.handleSkip("previous")} aria-label="previous track">
-                <FontAwesomeIcon icon={faBackward} />
-              </button>
               {this.state.player === "paused" && (
                 <button onClick={() => this.setState({ player: "playing" })} aria-label="play" className="play-pause">
                   <FontAwesomeIcon icon={faPlay} />
@@ -163,12 +150,6 @@ class Playlist extends React.Component {
                   <FontAwesomeIcon icon={faPause} />
                 </button>
               )}
-              {/* <button onClick={() => this.setState({ player: "stopped" })}>
-                <FontAwesomeIcon icon={faStop} />
-              </button> */}
-              <button onClick={() => this.handleSkip("next")} aria-label="next track"                   >
-                <FontAwesomeIcon icon={faForward} />
-              </button>
             </div>
           )}
           <TimeBar
@@ -176,17 +157,9 @@ class Playlist extends React.Component {
             currentTime={this.state.currentTime}
             duration={this.state.duration}
           />
-          <h2>Trish Robb Music</h2>
-          <ul className="tracklist" aria-label="Trish Robb Music trak list                                    ">{list}</ul>
+
         </div>
         <audio ref={ref => (this.player = ref)} autoPlay />
-        <ul className="social-follow">
-          <li><a href="https://www.instagram.com/trishrobbmusic/?hl=en" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /></a></li>
-          <li><a href="https://www.youtube.com/watch?v=jytfVOUUxnw&feature=youtu.be" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} /></a></li>
-          <li><a href="https://open.spotify.com/artist/7tC9Blhmr3PSmrWwwNG9sl" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faSpotify} /></a></li>
-          <li><a href="https://ca.tunecore.com/sell-your-music-online?ref=c_9061009&cmp=b_1t1&utm_content=192369383501_&utm_term=%2Bget%20music%20on%20%2Bapple%20%2Bmusic&utm_source=google&utm_medium=cpc&utm_campaign=ca_md_am&gclid=CjwKCAiAis3vBRBdEiwAHXB29OJhc__q_OcPEkxKihKCLEnb3nOqyeVmGeUBNr-upYKtcenY8-IUkBoCFr0QAvD_BwE" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faItunesNote} /></a></li>
-          <li><a href="https://www.facebook.com/Trish-Robb-65027745673/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookF} /></a></li>
-        </ul>
       </div>
     );
   }
@@ -214,8 +187,8 @@ function TimeBar({ currentTime, duration, setTime }) {
               : `${246 / Math.round(duration)}px`,
           background:
             currentTime && Math.round(currentTime) === second
-              ? "#C80816"
-              : "#222",
+              ? "#000"
+              : "#000",
           transform:
             currentTime && Math.round(currentTime) === second
               ? "scale(4)"

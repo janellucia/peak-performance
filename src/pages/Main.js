@@ -1,24 +1,27 @@
 import React from 'react';
-// import logo from '../images/logo.png';
-import Music from '../components/Music.js'
-import About from '../components/About.js'
-import Shows from '../components/Shows.js'
-import Video from '../components/Video.js'
-import Subscribe from '../components/Subscribe.js'
-import Header from '../components/Header.js';
+
+import Landing from '../components/Landing';
+import Testimonials from "../components/Testimonials"
+import Howitworks from "../components/Howitworks"
+import Featured from "../components/Featured"
+import Getapp from "../components/Getapp"
+import Team from "../components/Team"
+import Listen from "../components/Listen"
+
+
+
 
 function Main() {
   return (
     <div>
-      <Header />
       <main id="main">
-        <div className="wrapper">
-          <Music name="music" />
-          <About name="about" />
-          <Shows name="shows" />
-          <Video name="video" />
-          <Subscribe name="subscribe" />
-        </div>
+        <Landing name="landing" />
+        <Testimonials name="testimonials" />
+        <Howitworks name="howitworks" />
+        <Featured name="featured" />
+        <Getapp name="getapp" />
+        <Team name="team" />
+        <Listen name="listen" />
       </main>
     </div>
   );

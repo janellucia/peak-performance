@@ -1,0 +1,63 @@
+.team {
+  padding: 70px 0;
+  background: rgba(235, 235, 235, 0.25);
+
+  h2 {
+    color: $mainColour;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .team-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px 0;
+
+      @media (max-width: 900px) {
+        justify-content: center;
+      }
+
+    .each-team-member {
+      width: 29.5%;
+
+      @media (max-width: 900px) {
+        width: 40%;
+        margin: 0 4%;
+      }
+
+      @media (max-width: 600px) {
+        width: 98%;
+        text-align: center;
+        margin: 25px 0;
+      }
+
+      img {
+        height: 250px;
+        width: auto;
+        margin: 0 auto;
+      }
+      h3 {
+        color: white;
+        font-size: 33px;
+        margin: 5px 0;
+        text-transform: uppercase;
+        color: lighten($mainColour, 5%);
+      }
+      .title {
+        color: lighten($mainColour, 10%);
+        margin: 5px 0;
+      }
+
+      .about {
+        color: white;
+        max-width: 400px;
+
+        @media (max-width: 600px) {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
