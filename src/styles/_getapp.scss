@@ -34,12 +34,50 @@
       }
     }
 
-    a {
+    .app-info {
+      width: 35%;
       margin: 50px 0;
-      &:hover, &:focus, &:active {
-        transform: scale(1.1);
+      color: white;
+
+      @media (max-width: 900px) {
+        width: 100%;
+      }
+
+      h3 {
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      p {
+        text-align: center;
+        font-size: 18px;
+      }
+
+      form {
+        overflow: hidden;
+        input, button {
+          width: 100%;
+          padding: 10px 20px;
+          font-size: 18px;
+          border: none;
+          margin: 5px 0;
+        }
+        button {
+          background: $secondaryColour;
+          color: $black;
+          text-transform: uppercase;
+          font-size: 16px;
+          letter-spacing: 1px;
+        }
       }
     }
+
+    // a {
+    //   margin: 50px 0;
+    //   &:hover, &:focus, &:active {
+    //     transform: scale(1.1);
+    //   }
+    // }
   }
 
 }

@@ -119,19 +119,19 @@ class Playlist extends React.Component {
 
 
   render() {
-    const list = TRACKS.map(item => {
-      return (
-        <li
-          key={item.id}
-          onClick={() => this.setState({ selectedTrack: item.title })}
+    // const list = TRACKS.map(item => {
+    //   return (
+    //     <li
+    //       key={item.id}
+    //       onClick={() => this.setState({ selectedTrack: item.title })}
 
-          tabIndex='0'
-        >
-          <span>{item.title}</span>
-          <span>{item.duration}</span>
-        </li>
-      );
-    });
+    //       tabIndex='0'
+    //     >
+    //       <span>{item.title}</span>
+    //       <span>{item.duration}</span>
+    //     </li>
+    //   );
+    // });
 
     return (
       <div className="playlist">
