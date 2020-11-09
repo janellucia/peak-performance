@@ -14,6 +14,7 @@ function Getapp() {
         <div className="download">
           <img src={phones} className="phones" alt="phones featuring tPeak Performance Skating" />
           <div className="app-info">
+
             <h3>Join the Waitlist</h3>
             <p>Sign up to be one of the first to know about realease dates.</p>
             <Mailchimp
