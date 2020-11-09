@@ -1,7 +1,6 @@
 import React from 'react';
 
 import phones from '../images/Phones.png';
-import playstore from '../images/playstore.png';
 import Mailchimp from 'react-mailchimp-form'
 
 function Getapp() {
