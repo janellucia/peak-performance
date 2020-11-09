@@ -2,7 +2,8 @@ import React from 'react';
 import { slide as Menu } from 'react-burger-menu'
 
 
-export default props => {
+
+function Hammy() {
   return (
     // Pass on our props
     <Menu right disableAutoFocus>
@@ -30,4 +31,6 @@ export default props => {
 
     </Menu>
   );
-};
+}
+
+export default Hammy;

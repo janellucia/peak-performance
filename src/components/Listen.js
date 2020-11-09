@@ -5,7 +5,7 @@ import Playlist from './Playlist.js'
 
 function Listen() {
   return (
-    <section className="listen">
+    <section className="listen" id="listen">
       <div className="wrapper">
         <h2>Listen To The Mental Training</h2>
         <div className="information">
