@@ -38,7 +38,6 @@ function Getapp() {
               }
             />
           </div>
-          {/* <a href="https://play.google.com/store/apps/details?id=de.swenggco.peakperformanceskating" target="new"><img src={playstore} alt="google play icon" /></a> */}
         </div>
       </div>
     </section>
