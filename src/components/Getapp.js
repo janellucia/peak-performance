@@ -18,7 +18,7 @@ function Getapp() {
             <h3>Join the Waitlist</h3>
             <p>Sign up to be one of the first to know about realease dates.</p>
             <Mailchimp
-              action='https://gmail.us2.list-manage.com/subscribe/post?u=adcb8d28dc6fa9a08f1d295bb&amp;id=2e825f8a86'
+              action="https://gmail.us2.list-manage.com/subscribe/post?u=adcb8d28dc6fa9a08f1d295bb&amp;id=2e825f8a86"
               fields={[
                 {
                   name: 'EMAIL',
@@ -32,7 +32,7 @@ function Getapp() {
                   sending: "Sending...",
                   success: "Thank you for subscribing!",
                   error: "An unexpected internal error has occurred.",
-                  empty: "You must write an e-mail.",
+                  empty: "Please enter an e-mail",
                   duplicate: "Too many subscribe attempts for this email address",
                   button: "Subscribe"
                 }
