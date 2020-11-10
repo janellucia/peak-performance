@@ -9,7 +9,7 @@ function Getapp() {
       <div className="wrapper">
         <div className="information">
           <h2>Ready to achieve Peak Performance?</h2>
-          <p className="sub-title">The Peak Performance Skating app will be available on Google Play for Android phones soon. For less than $20 you will get the same mental training that Brian teaches his world champion & Olympic gold medalist skaters.</p>
+          <p className="sub-title">The Peak Performance Skating app will be available on Google Play for Android phones soon. For less than $20 you will get the same mental training that Brian teaches his world champion & Olympic gold medalist skater.</p>
         </div>
         <div className="download">
           <img src={phones} className="phones" alt="phones featuring tPeak Performance Skating" />
